@@ -17,7 +17,7 @@ const CreateJob: React.FC = () => {
       <main className="max-w-none min-h-screen w-full bg-[#FBFBFF] mx-auto max-md:max-w-[991px] max-sm:max-w-screen-sm">
         <Header />
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold text-[#303030] mb-8">Create a New Job</h1>
+          <h1 className="text-3xl font-bold text-center text-[#303030] mb-8">Create Job Opening</h1>
           <JobForm />
         </div>
       </main>

@@ -22,33 +22,33 @@ const Header: React.FC = () => {
         >
           Home
         </Link>
-        <Link
-          to="/"
+        <a
+          href="#"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Find Jobs
-        </Link>
-        <Link
-          to="/"
+        </a>
+        <a
+          href="#"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Find Talents
-        </Link>
-        <Link
-          to="/"
+        </a>
+        <a
+          href="#"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           About us
-        </Link>
-        <Link
-          to="/"
+        </a>
+        <a
+          href="#"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Testimonials
-        </Link>
-        <Link
-          to="/create-job"
-          className="text-white text-base font-bold cursor-pointer bg-[#8636F8] px-6 py-2 rounded-[10px] hover:bg-[#7429e3] transition"
+        </a>
+        <Link 
+          to="/create-job" 
+          className="text-white text-base font-bold cursor-pointer bg-[#8636F8] px-6 py-2 rounded-[10px]"
         >
           Create Jobs
         </Link>
