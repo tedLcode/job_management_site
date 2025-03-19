@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from "react";
 
 interface RangeSliderProps {
@@ -50,7 +51,7 @@ const RangeSlider: React.FC<RangeSliderProps> = ({ value, onChange }) => {
 
   return (
     <div
-      className="w-[200px] h-0.5 relative bg-[#CCC2C2] mt-2"
+      className="w-full h-0.5 relative bg-[#CCC2C2] mt-2"
       ref={trackRef}
       onMouseDown={handleMouseDown}
     >

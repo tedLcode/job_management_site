@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import RangeSlider from "../ui/RangeSlider";
 
@@ -46,11 +47,11 @@ const SearchBar: React.FC = () => {
           />
           <i className="ti ti-chevron-down" />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 min-w-[200px]">
           <div className="text-base font-bold text-[#222]">
             Salary Per Month
           </div>
-          <div className="text-base text-[#222]">₹50k - ₹80k</div>
+          <div className="text-base text-[#222] whitespace-nowrap">₹50k - ₹80k</div>
           <RangeSlider value={salaryRange} onChange={handleSalaryChange} />
         </div>
       </form>
