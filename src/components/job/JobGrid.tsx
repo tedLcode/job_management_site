@@ -1,3 +1,4 @@
+
 import React from "react";
 import JobCard from "./JobCard";
 
@@ -102,14 +103,10 @@ const jobsData = [
 ];
 
 const JobGrid: React.FC = () => {
-  // Split jobs into two rows for layout purposes
-  const firstRowJobs = jobsData.slice(0, 4);
-  const secondRowJobs = jobsData.slice(4, 8);
-
   return (
-    <>
-      <section className="flex gap-4 flex-wrap px-16 py-4 max-md:px-8 max-md:py-4 max-sm:p-4">
-        {firstRowJobs.map((job) => (
+    <div className="container mx-auto px-16 py-8 max-md:px-8 max-sm:px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {jobsData.map((job) => (
           <JobCard
             key={job.id}
             companyLogo={job.companyLogo}
@@ -121,22 +118,8 @@ const JobGrid: React.FC = () => {
             description={job.description}
           />
         ))}
-      </section>
-      <section className="flex gap-4 flex-wrap px-16 py-4 max-md:px-8 max-md:py-4 max-sm:p-4">
-        {secondRowJobs.map((job) => (
-          <JobCard
-            key={job.id}
-            companyLogo={job.companyLogo}
-            companyName={job.companyName}
-            jobTitle={job.jobTitle}
-            experience={job.experience}
-            locationType={job.locationType}
-            salary={job.salary}
-            description={job.description}
-          />
-        ))}
-      </section>
-    </>
+      </div>
+    </div>
   );
 };
 
