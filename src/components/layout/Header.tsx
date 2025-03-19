@@ -1,9 +1,11 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
     <header className="shadow-[0_0_14px_rgba(198,191,191,0.25)] flex items-center justify-between bg-white px-[275px] py-[21px] max-md:px-8 max-md:py-[21px]">
-      <div className="w-11 h-[45px]">
+      <Link to="/" className="w-11 h-[45px]">
         <div>
           <div
             dangerouslySetInnerHTML={{
@@ -12,41 +14,44 @@ const Header: React.FC = () => {
             }}
           />
         </div>
-      </div>
+      </Link>
       <nav className="flex items-center gap-6 max-sm:hidden">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Home
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Find Jobs
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Find Talents
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           About us
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/"
           className="text-[#303030] text-base font-bold cursor-pointer"
         >
           Testimonials
-        </a>
-        <button className="text-white text-base font-bold cursor-pointer bg-[#8636F8] px-6 py-2 rounded-[10px]">
+        </Link>
+        <Link
+          to="/create-job"
+          className="text-white text-base font-bold cursor-pointer bg-[#8636F8] px-6 py-2 rounded-[10px] hover:bg-[#7429e3] transition"
+        >
           Create Jobs
-        </button>
+        </Link>
       </nav>
     </header>
   );
